@@ -21,9 +21,9 @@ llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name='gpt-3.5-turbo', temp
 qa = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=vectorstore.as_retriever())
 
 
-#@app.route('/')
-#def home():
-#    return 'Hello, World!'
+@app.route('/')
+def home():
+    return 'Hello, World!'
 
 #@app.route('/about')
 #def about():
