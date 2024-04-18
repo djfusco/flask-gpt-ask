@@ -5,7 +5,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import RetrievalQA
 
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv 
 load_dotenv() 
 
 app = Flask(__name__)
